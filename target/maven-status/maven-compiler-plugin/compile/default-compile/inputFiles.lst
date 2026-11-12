@@ -1,0 +1,13 @@
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/TwitterAppApplication.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/config/CustomUserDetails.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/config/CustomUserDetailsService.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/config/SecurityConfig.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/controller/PostController.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/controller/UserController.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/model/Post.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/model/User.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/repository/PostRepository.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/repository/UserRepository.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/service/PostService.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/service/UserService.java
+/Users/faizhussain/Desktop/DevOps-Projects/DevOps-Project-38/FullStack-Blogging-App/src/main/java/com/example/twitterapp/service/UserServiceImpl.java
