@@ -1,0 +1,23 @@
+# Jenkins image for running DevOps-Project-38 locally on a Mac (Intel or Apple Silicon).
+# Adds: JDK 17, Maven, Docker CLI (+buildx), Trivy and kubectl.
+FROM jenkins/jenkins:lts
+
+USER root
+
+# JDK 17 and Maven for the pipeline (configured in Jenkins > Tools)
+COPY --from=eclipse-temurin:17-jdk /opt/java/openjdk /opt/jdk17
+COPY --from=maven:3.9-eclipse-temurin-17 /usr/share/maven /opt/maven
+
+# Docker CLI + buildx; talks to Docker Desktop through the mounted socket
+COPY --from=docker:cli /usr/local/bin/docker /usr/local/bin/docker
+COPY --from=docker/buildx-bin /buildx /usr/libexec/docker/cli-plugins/docker-buildx
+
+# Trivy scanner
+COPY --from=aquasec/trivy:latest /usr/local/bin/trivy /usr/local/bin/trivy
+
+# kubectl (latest stable, matching the CPU architecture)
+RUN ARCH="$(dpkg --print-architecture)" \
+ && curl -fsSLo /usr/local/bin/kubectl "https://dl.k8s.io/release/$(curl -fsSL https://dl.k8s.io/release/stable.txt)/bin/linux/${ARCH}/kubectl" \
+ && chmod +x /usr/local/bin/kubectl
+
+ENV PATH="/opt/maven/bin:${PATH}"
